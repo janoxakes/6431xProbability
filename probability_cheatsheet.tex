@@ -156,7 +156,7 @@ An event, $A$, is a subset of the sample space. Probability is assigned to event
 	\item Normalization: $\mathds{P}(\Omega)=1$
 	\item (Finite) Additivity:
 	
-	If $A\cap B=\emptyset$, then $\mathds{P}(A\cap B)=\mathds{P}(A)+\mathds{P}(B)$.
+	If $A\cap B=\emptyset$, then $\mathds{P}(A\cup B)=\mathds{P}(A)+\mathds{P}(B)$.
 \end{itemize}
 \begin{description}
 	\item[Consequences of the Axioms] ~
@@ -167,6 +167,7 @@ An event, $A$, is a subset of the sample space. Probability is assigned to event
 		\item $\mathds{P}(A)+\mathds{P}(A^\mathsf{c})=1$
 		\item If $A\subset B$, then $\mathds{P}(A)\leq\mathds{P}(B)$
 		\item \textbf{Union bound:} $\mathds{P}(A\cup B)\leq\mathds{P}(A)+\mathds{P}(B)$
+		\item $\mathds{P}(A\cup B\cup C)= \mathds{P}(A) + \mathds{P}(B\cap A^\mathsf{c}) + \mathds{P}(C\cap B^\mathsf{c}\cap A^\mathsf{c})$
 	\end{itemize}
 	\item[Countable Additivity Axiom] If $A_1, A_2, A_3, \dots$ is an infinite {\it sequence} of {\it disjoint} events, then
 	\begin{gather*}
